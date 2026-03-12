@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm_config_cache=/tmp/npm-cache npx shadcn@latest add accordion slider checkbox radio-group toast --yes 2>&1)",
+      "Bash(npm_config_cache=/tmp/npm-cache npx shadcn@latest add accordion slider checkbox radio-group --yes 2>&1)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm run build 2>&1)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install @radix-ui/react-slot @radix-ui/react-select @radix-ui/react-separator @radix-ui/react-dialog 2>&1)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install @radix-ui/react-label 2>&1)",
+      "Bash(sleep 4 && curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(find /Users/kyletessmann/Documents/westlabelco/.next -name \"*.css\" 2>/dev/null | head -20)",
+      "Bash(lsof -ti :3000 | xargs kill -9 2>/dev/null; echo \"done\")",
+      "Bash(git init && git add . && git commit -m \"Initial website upload\" && git branch -M main && git remote add origin https://github.com/Ktessy14/West-Label-Co.git && git push -u origin main 2>&1)"
+    ]
+  }
+}
