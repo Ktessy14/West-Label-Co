@@ -98,7 +98,7 @@ export default function ProcessPage() {
             Our Process
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            From first contact to delivery in as few as 3–5 business days. Here's
+            From first contact to delivery in as few as 3–5 business days. Here&apos;s
             exactly how we turn your vision into a finished label.
           </p>
         </div>

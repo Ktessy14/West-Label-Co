@@ -58,7 +58,7 @@ export default function RequestSamplePage() {
             Feel the Quality Before You Order
           </h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">
-            We'll send you a curated sample pack so you can touch, see, and compare
+            We&apos;ll send you a curated sample pack so you can touch, see, and compare
             our materials before committing to an order.
           </p>
         </div>
@@ -195,7 +195,7 @@ export default function RequestSamplePage() {
             </Button>
 
             <p className="text-center text-xs text-gray-400">
-              Free shipping. No obligation. We'll never spam you.
+              Free shipping. No obligation. We&apos;ll never spam you.
             </p>
           </form>
         </div>
