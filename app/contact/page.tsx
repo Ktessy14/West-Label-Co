@@ -131,8 +131,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex flex-col gap-1.5">
-                  <Label htmlFor="subject">Subject</Label>
-                  <select name="subject" id="subject" required defaultValue="" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
+                  <Label htmlFor="enquiry-type">Enquiry type</Label>
+                  <select name="enquiry-type" id="enquiry-type" required defaultValue="" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
 <option value="" disabled>What can we help with?</option>
 <option value="quote">Request a Quote</option>
 <option value="sample">Request Samples</option>

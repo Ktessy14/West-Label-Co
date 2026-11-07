@@ -52,6 +52,9 @@ export default function EnquiryForm({ name, className, children }: {
     <form name={name} method="POST" action="/enquiry-received/" data-netlify="true"
       netlify-honeypot="bot-field" onSubmit={submit} aria-busy={status === "sending"}>
       <input type="hidden" name="form-name" value={name} />
+      <input type="hidden" name="subject" value={name === "contact"
+        ? "WestLabelCo website enquiry"
+        : "WestLabelCo website sample request"} />
       <p hidden><label>Leave this field empty: <input name="bot-field" tabIndex={-1} autoComplete="off" /></label></p>
       <fieldset disabled={status === "sending"} className={className}>
         {children}
