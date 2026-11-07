@@ -5,13 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -114,48 +108,47 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-3 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
               <h2 className="text-xl font-bold text-brand-navy mb-6">Send Us a Message</h2>
-              <form className="flex flex-col gap-5">
+              <EnquiryForm name="contact" className="flex flex-col gap-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1.5">
                     <Label htmlFor="first-name">First Name</Label>
-                    <Input id="first-name" placeholder="Jane" />
+                    <Input name="first-name" id="first-name" required maxLength={200} placeholder="Jane" />
                   </div>
                   <div className="flex flex-col gap-1.5">
                     <Label htmlFor="last-name">Last Name</Label>
-                    <Input id="last-name" placeholder="Smith" />
+                    <Input name="last-name" id="last-name" required maxLength={200} placeholder="Smith" />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="jane@yourbrand.com" />
+                  <Input name="email" id="email" required maxLength={254} type="email" placeholder="jane@yourbrand.com" />
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <Label htmlFor="phone">Phone (optional)</Label>
-                  <Input id="phone" type="tel" placeholder="0400 000 000" />
+                  <Input name="phone" id="phone" maxLength={200} type="tel" placeholder="0400 000 000" />
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <Label htmlFor="subject">Subject</Label>
-                  <Select>
-                    <SelectTrigger id="subject">
-                      <SelectValue placeholder="What can we help with?" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="quote">Request a Quote</SelectItem>
-                      <SelectItem value="sample">Request Samples</SelectItem>
-                      <SelectItem value="artwork">Artwork / File Questions</SelectItem>
-                      <SelectItem value="order">Order Status</SelectItem>
-                      <SelectItem value="reorder">Reorder</SelectItem>
-                      <SelectItem value="other">General Inquiry</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <select name="subject" id="subject" required defaultValue="" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
+<option value="" disabled>What can we help with?</option>
+<option value="quote">Request a Quote</option>
+<option value="sample">Request Samples</option>
+<option value="artwork">Artwork / File Questions</option>
+<option value="order">Order Status</option>
+<option value="reorder">Reorder</option>
+<option value="other">General Inquiry</option>
+</select>
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <Label htmlFor="message">Message</Label>
                   <Textarea
+                    name="message"
+                    required
+                    maxLength={5000}
                     id="message"
                     placeholder="Tell us about your project — label size, quantity, material preferences, timeline, etc."
                     rows={5}
@@ -168,7 +161,7 @@ export default function ContactPage() {
                 >
                   Send Message
                 </Button>
-              </form>
+              </EnquiryForm>
             </div>
           </div>
         </div>

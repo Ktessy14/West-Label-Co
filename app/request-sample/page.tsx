@@ -6,13 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
   title: "Request a Sample",
@@ -115,72 +109,66 @@ export default function RequestSamplePage() {
             Fill out the form below and we&apos;ll ship your samples within 2 business days.
           </p>
 
-          <form className="flex flex-col gap-6">
+          <EnquiryForm name="sample-request" className="flex flex-col gap-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="first-name">First Name</Label>
-                <Input id="first-name" placeholder="Jane" />
+                <Input name="first-name" id="first-name" required maxLength={200} placeholder="Jane" />
               </div>
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="last-name">Last Name</Label>
-                <Input id="last-name" placeholder="Smith" />
+                <Input name="last-name" id="last-name" required maxLength={200} placeholder="Smith" />
               </div>
             </div>
 
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="email">Email Address</Label>
-              <Input id="email" type="email" placeholder="jane@yourbrand.com" />
+              <Input name="email" id="email" required maxLength={254} type="email" placeholder="jane@yourbrand.com" />
             </div>
 
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="company">Company / Brand Name</Label>
-              <Input id="company" placeholder="Your Brand Co." />
+              <Input name="company" id="company" maxLength={200} placeholder="Your Brand Co." />
             </div>
 
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="industry">Industry</Label>
-              <Select>
-                <SelectTrigger id="industry">
-                  <SelectValue placeholder="Select your industry" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="supplements">Supplements / Nutraceuticals</SelectItem>
-                  <SelectItem value="cosmetics">Cosmetics / Beauty</SelectItem>
-                  <SelectItem value="breweries">Brewery / Beverage</SelectItem>
-                  <SelectItem value="food">Food & Beverage (Other)</SelectItem>
-                  <SelectItem value="other">Other</SelectItem>
-                </SelectContent>
-              </Select>
+              <select name="industry" id="industry" required defaultValue="" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
+<option value="" disabled>Select your industry</option>
+<option value="supplements">Supplements / Nutraceuticals</option>
+<option value="cosmetics">Cosmetics / Beauty</option>
+<option value="breweries">Brewery / Beverage</option>
+<option value="food">Food & Beverage (Other)</option>
+<option value="other">Other</option>
+</select>
             </div>
 
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="sample-type">Sample Type</Label>
-              <Select>
-                <SelectTrigger id="sample-type">
-                  <SelectValue placeholder="Select sample type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="swatch">Material Swatch Kit</SelectItem>
-                  <SelectItem value="industry">Industry Sample Pack</SelectItem>
-                  <SelectItem value="custom">Custom Printed Sample</SelectItem>
-                </SelectContent>
-              </Select>
+              <select name="sample-type" id="sample-type" required defaultValue="" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
+<option value="" disabled>Select sample type</option>
+<option value="swatch">Material Swatch Kit</option>
+<option value="industry">Industry Sample Pack</option>
+<option value="custom">Custom Printed Sample</option>
+</select>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="address">Shipping Address</Label>
-                <Input id="address" placeholder="123 Main St" />
+                <Input name="address" id="address" required maxLength={200} placeholder="123 Main St" />
               </div>
               <div className="flex flex-col gap-1.5">
-                <Label htmlFor="city">City, State, ZIP</Label>
-                <Input id="city" placeholder="Perth WA 6000" />
+                <Label htmlFor="city">Suburb, State, Postcode</Label>
+                <Input name="city" id="city" required maxLength={200} placeholder="Perth WA 6000" />
               </div>
             </div>
 
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="notes">Additional Notes (optional)</Label>
               <Textarea
+                name="notes"
+                maxLength={5000}
                 id="notes"
                 placeholder="Any specific materials, finishes, or label sizes you're interested in?"
                 rows={3}
@@ -197,7 +185,7 @@ export default function RequestSamplePage() {
             <p className="text-center text-xs text-gray-400">
               Free shipping. No obligation. We&apos;ll never spam you.
             </p>
-          </form>
+          </EnquiryForm>
         </div>
       </section>
     </>

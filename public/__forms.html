@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Enquiry forms</title></head>
+<body>
+<!-- Static definitions for Netlify's build-time form detection. Keep field names in sync with the React forms. -->
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/enquiry-received/" hidden>
+<input name="form-name" value="contact" type="hidden"><input name="bot-field">
+<input name="first-name"><input name="last-name"><input name="email" type="email"><input name="phone"><input name="subject"><textarea name="message"></textarea>
+</form>
+<form name="sample-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/enquiry-received/" hidden>
+<input name="form-name" value="sample-request" type="hidden"><input name="bot-field">
+<input name="first-name"><input name="last-name"><input name="email" type="email"><input name="company"><input name="industry"><input name="sample-type"><input name="address"><input name="city"><textarea name="notes"></textarea>
+</form>
+<p>Please use our <a href="/contact/">contact form</a> or <a href="/request-sample/">sample request form</a>.</p>
+</body></html>
