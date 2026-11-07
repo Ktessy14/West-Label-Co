@@ -23,7 +23,7 @@ const NAV_COLS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D2D2D] text-white border-t border-white/8">
+    <footer className="bg-[#222522] text-white border-t border-white/8">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
@@ -90,10 +90,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-white/8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/30">
           <p>&copy; {new Date().getFullYear()} West Label Co. All rights reserved.</p>
-          <div className="flex gap-5">
-            <Link href="#" className="hover:text-white/55 transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white/55 transition-colors">Terms of Service</Link>
-          </div>
+
         </div>
       </div>
     </footer>

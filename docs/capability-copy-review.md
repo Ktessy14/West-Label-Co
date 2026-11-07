@@ -22,3 +22,6 @@ Draft only. Do not publish without Kyle's review.
 - Kyle described completed silver-stock/white-toner job on 23 Oct: https://chatgpt.com/c/6ad9a621-bfa0-83ec-adb7-81700aac4e24?messageId=6b2dc98a-afc9-48f2-ba69-641f57fda4b2
 
 Equipment ownership does not prove adhesive performance, regulatory approval, guaranteed colour, or current material stock. No customer artwork/name is newly published in this draft.
+
+## Owner-authorised visual rebuild
+Kyle explicitly authorised a full rebuild and named QL900, OKI Pro1050 and OKI 9543. These are listed as equipment only, without invented specifications or throughput. Existing verified GD Quantum F4 retained. Homepage and industry pages rebuilt around an editorial charcoal/copper/ivory system. All artwork is original CSS illustration, explicitly identified as concept work, not customer work or print samples. Navigation keyboard/mobile accessibility improved. Placeholder legal links removed rather than inventing policies. Quote-request path remains in place as approved. Form code and registered fields/subjects unchanged.

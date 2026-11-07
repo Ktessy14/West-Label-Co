@@ -50,11 +50,10 @@ export default function ContactPage() {
             Get in Touch
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-5">
-            Talk to a Label Specialist
+            Let’s talk labels
           </h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">
-            Have a question about materials, specs, or pricing? Our team responds
-            within 1 business day — usually much faster.
+            Tell us about your labels, packaging and quantities. We’ll work through materials, artwork and pricing with you.
           </p>
         </div>
       </section>

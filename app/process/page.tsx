@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "How West Label Co. takes your label from concept to delivery. A streamlined 6-step process built for quality and speed.",
+    "How West Label Co. takes your label from concept to delivery. From specifications and artwork approval to print and finishing.",
 };
 
 const steps = [

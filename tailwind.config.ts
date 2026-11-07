@@ -53,16 +53,16 @@ const config: Config = {
         // West Label Co. brand colors
         brand: {
           navy: {
-            DEFAULT: "#1A2636",
-            dark: "#111C28",
+            DEFAULT: "#222522",
+            dark: "#171a17",
             light: "#243450",
           },
           gold: {
-            DEFAULT: "#C4922A",
+            DEFAULT: "#ad532e",
             light: "#D4A84B",
-            dark: "#A67A1F",
+            dark: "#8c3f20",
           },
-          cream: "#F8F5F0",
+          cream: "#f4f2eb",
           warm: "#F2EEE8",
         },
         // Quote calculator palette
@@ -74,7 +74,7 @@ const config: Config = {
           subtle: "#222222",
         },
         copper: {
-          DEFAULT: "#B87333",
+          DEFAULT: "#ad532e",
           light: "#CC8844",
           dark: "#9A5E22",
           muted: "#C48B50",
