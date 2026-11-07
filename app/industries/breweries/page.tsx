@@ -8,34 +8,14 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Brewery Labels",
   description:
-    "Ice-bucket proof brewery labels for craft beer, cider, spirits, and more. Short-run friendly with vibrant colour.",
+    "Custom beverage labels printed in Perth. Discuss artwork, materials and application requirements for your packaging.",
 };
 
 const features = [
-  {
-    icon: Droplets,
-    title: "Ice Bucket Proof",
-    description:
-      "Our waterproof films and wet-strength adhesives stay on bottles through full submersion in ice water. No peeling, no smearing, no embarrassing labels.",
-  },
-  {
-    icon: Thermometer,
-    title: "Temperature Resistant",
-    description:
-      "Labels that perform from cold storage to a warm bar top. Our adhesives maintain bond across extreme temperature swings.",
-  },
-  {
-    icon: Printer,
-    title: "Short-Run Friendly",
-    description:
-      "Digital printing means no plate fees. Order as few as 250 labels — perfect for limited releases, seasonal brews, and test batches.",
-  },
-  {
-    icon: PackageOpen,
-    title: "No-Label Look",
-    description:
-      'Clear BOPP substrates give a premium "no label" appearance. Perfect for craft breweries wanting to showcase bottle colour.',
-  },
+ { icon: Droplets, title: "Moisture Exposure", description: "Tell us whether the label will see condensation, refrigeration or immersion. Test samples on your actual packaging before ordering." },
+ { icon: Thermometer, title: "Storage Conditions", description: "Share the application and storage temperatures so we can discuss suitable materials and adhesives." },
+ { icon: Printer, title: "Multiple Designs", description: "Quote seasonal releases and product variants together. Minimum quantities and setup requirements are confirmed for the job." },
+ { icon: PackageOpen, title: "Colour and Metallic Effects", description: "Ask about colour and selective white toner on suitable stock for your label design." },
 ];
 
 const applications = [
@@ -50,12 +30,30 @@ const applications = [
 ];
 
 const specs = [
-  { label: "Minimum Order", value: "250 labels" },
-  { label: "Standard Turnaround", value: "5–7 business days" },
-  { label: "Rush Options", value: "2–3 business day available" },
-  { label: "Roll Direction", value: "1–12 available" },
-  { label: "Max Label Width", value: "200mm (larger formats via partners)" },
-  { label: "Colour", value: "Full CMYK + Pantone options" },
+  {
+    "label": "Quantity",
+    "value": "Confirmed per design on quote"
+  },
+  {
+    "label": "Dispatch timing",
+    "value": "Confirmed on quote"
+  },
+  {
+    "label": "Urgent orders",
+    "value": "Ask about current availability"
+  },
+  {
+    "label": "Roll requirements",
+    "value": "Supply direction and core size"
+  },
+  {
+    "label": "Dimensions",
+    "value": "Send label and container dimensions"
+  },
+  {
+    "label": "Colour",
+    "value": "Artwork and proof requirements confirmed"
+  }
 ];
 
 export default function BreweriesPage() {
@@ -68,11 +66,10 @@ export default function BreweriesPage() {
             Industry
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-5 max-w-2xl">
-            Brewery Labels Built for the Cooler
+            Custom Beverage Labels
           </h1>
           <p className="text-white/70 text-lg max-w-xl mb-8">
-            Ice-bucket proof. Condensation resistant. Shelf-stopping colour. Labels
-            for craft breweries that refuse to settle for ordinary.
+            Labels for your bottles and cans, with materials and finishing selected for the intended application.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild className="bg-brand-gold hover:bg-brand-gold-dark text-white font-semibold">
@@ -92,7 +89,7 @@ export default function BreweriesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-brand-navy">
-              Engineered for the Beverage Industry
+              Plan Your Beverage Labels
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -154,7 +151,7 @@ export default function BreweriesPage() {
             Ready to Label Your Next Batch?
           </h2>
           <p className="text-white/60 mb-8 max-w-md mx-auto">
-            Get a quote in minutes. No minimums too small for us.
+            Send your sizes, quantities and intended use for a job-specific quote.
           </p>
           <Button asChild className="bg-brand-gold hover:bg-brand-gold-dark text-white font-semibold">
             <Link href="/quote-calculator">

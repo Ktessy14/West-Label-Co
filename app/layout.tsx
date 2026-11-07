@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | West Label Co.",
   },
   description:
-    "West Label Co. crafts premium custom labels for supplements, cosmetics, and breweries. Precision printing, exceptional materials, unmatched quality.",
+    "Custom product labels printed in Perth. Colour, white toner, metallic effects and digital cutting for supplement, cosmetic and beverage packaging.",
 };
 
 export default function RootLayout({

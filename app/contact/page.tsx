@@ -92,15 +92,15 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-10 p-6 bg-brand-navy rounded-xl">
-                <h3 className="font-semibold text-white mb-2">Need a quote fast?</h3>
+                <h3 className="font-semibold text-white mb-2">Planning a label job?</h3>
                 <p className="text-white/60 text-sm mb-4">
-                  Use our quote calculator for instant pricing on standard orders.
+                  See which specifications to include for a job-specific quote.
                 </p>
                 <Button
                   asChild
                   className="w-full bg-brand-gold hover:bg-brand-gold-dark text-white font-medium text-sm"
                 >
-                  <a href="/quote-calculator">Quote Calculator</a>
+                  <a href="/quote-calculator">Request a Quote</a>
                 </Button>
               </div>
             </div>

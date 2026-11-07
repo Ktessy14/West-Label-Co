@@ -14,7 +14,7 @@ const NAV_COLS = [
     heading: "Company",
     links: [
       { label: "Our Process",      href: "/process"           },
-      { label: "Quote Calculator", href: "/quote-calculator"  },
+      { label: "Request a Quote", href: "/quote-calculator"  },
       { label: "Request Samples",  href: "/request-sample"    },
       { label: "Contact",          href: "/contact"           },
     ],
@@ -37,7 +37,7 @@ export default function Footer() {
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
               Perth-based label printing for supplement, cosmetic, and beverage
-              brands. Low minimums, fast turnaround.
+              brands. Materials and finishing confirmed for your job.
             </p>
 
             <ul className="flex flex-col gap-3">

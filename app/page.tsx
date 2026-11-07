@@ -1,84 +1,40 @@
 import Link from "next/link";
-import { ArrowRight, Clock, Package, MapPin, Upload, FileCheck, Printer, Truck, CheckCircle } from "lucide-react";
+import { ArrowRight, Package, MapPin, Upload, FileCheck, Printer, Truck, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const valueProps = [
-  {
-    icon: Clock,
-    title: "3-Day Turnaround",
-    description:
-      "From proof approval to dispatch in 3 business days. Rush jobs welcome — talk to us about same-day dispatch for urgent orders.",
-  },
-  {
-    icon: Package,
-    title: "250 Label Minimum Order",
-    description:
-      "No need to over-order. Our digital presses let you start from as little as 250 labels per design, with no setup fees.",
-  },
-  {
-    icon: MapPin,
-    title: "WA-Based Production",
-    description:
-      "Printed and dispatched from Perth, Western Australia. Faster delivery for local brands, and you can collect in person.",
-  },
+  { icon: Printer, title: "White Toner & Metallic Effects", description: "Combine colour and white toner on suitable stocks. Selected areas can remain metallic while other elements print opaque." },
+  { icon: Package, title: "Multiple Designs & SKUs", description: "Quote different products, flavours or variants together. Include the quantity required for each design." },
+  { icon: MapPin, title: "Printed in Perth", description: "Local label production in Western Australia. Materials, finishing and delivery arrangements are confirmed with your quote." },
 ];
 
 const materials = [
   {
-    name: "Gloss Polypropylene",
-    description:
-      "Our most popular waterproof film. Vibrant colour reproduction and a high-gloss finish that makes products stand out on shelf. Ideal for bottles, jars, and anything that sees moisture.",
+    "name": "White Label Stocks",
+    "description": "Discuss white film or paper options for your product. Suitability and availability are confirmed for each job."
   },
   {
-    name: "Matte Paper",
-    description:
-      "A natural, premium feel suited to craft and organic brand positioning. Takes ink beautifully for rich, accurate colour. Best for dry environments and decorative packaging.",
+    "name": "Metallic Effects",
+    "description": "Silver stock with selective white toner lets metallic and opaque areas work together in one design."
   },
   {
-    name: "Clear Film",
-    description:
-      "Transparent BOPP substrate creates a seamless no-label look. Your design appears to float directly on the product surface — a favourite for premium cosmetic and beverage brands.",
+    "name": "Clear Labels",
+    "description": "Ask about a clear-label finish and the white layer your artwork may need. We confirm suitable stock before quoting."
   },
   {
-    name: "Holographic",
-    description:
-      "Rainbow foil substrate that shifts and shimmers under light. Delivers instant shelf presence and a premium, hard-to-replicate finish for limited editions and luxury products.",
-  },
+    "name": "Custom Cutting",
+    "description": "Digital cutting for product labels. Send your dimensions and shape so we can check layout and finishing."
+  }
 ];
 
 const processSteps = [
-  {
-    icon: Upload,
-    step: "01",
-    title: "Upload Artwork",
-    description: "Send us your print-ready files via the quote form. We accept PDF, AI, and EPS.",
-  },
-  {
-    icon: FileCheck,
-    step: "02",
-    title: "Get Quote",
-    description: "Receive a detailed quote within 1 business hour, including material and finish options.",
-  },
-  {
-    icon: CheckCircle,
-    step: "03",
-    title: "Approve Proof",
-    description: "We send a digital proof for your sign-off before anything goes to press.",
-  },
-  {
-    icon: Printer,
-    step: "04",
-    title: "We Print",
-    description: "Production begins immediately after approval. Every run is colour-checked against your proof.",
-  },
-  {
-    icon: Truck,
-    step: "05",
-    title: "Delivered",
-    description: "Dispatched from Perth in 3 business days. Australia-wide shipping with full tracking.",
-  },
+  { icon: Upload, step: "01", title: "Send Your Specs", description: "Tell us the label size, quantity per design, intended use and any finishing requirements." },
+  { icon: FileCheck, step: "02", title: "Get a Quote", description: "Your quote confirms materials, printing, finishing, any setup charges and expected dispatch timing." },
+  { icon: CheckCircle, step: "03", title: "Approve Artwork", description: "Review the layout and product information before production. Ask about proof options for colour-critical work." },
+  { icon: Printer, step: "04", title: "Print & Finish", description: "Labels are printed and finished to the specification agreed for your job." },
+  { icon: Truck, step: "05", title: "Delivery or Collection", description: "Confirm your delivery or collection requirements when requesting a quote." },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -91,13 +47,13 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-16 sm:py-24 lg:py-32">
           <div className="max-w-2xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-5">
-              Premium Labels.
+              Custom Product Labels.
               <br />
-              <span className="text-copper">Printed Fast.</span>
+              <span className="text-copper">Printed in Perth.</span>
             </h1>
             <p className="text-white/65 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl">
               Perth-based label printing for supplement, cosmetic, and beverage brands.
-              Low minimums. 3-day turnaround.
+              Colour, white toner, metallic effects and custom cutting.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -106,7 +62,7 @@ export default function HomePage() {
                 className="bg-copper hover:bg-copper-dark text-white font-semibold text-base px-8 h-12"
               >
                 <Link href="/quote-calculator">
-                  Get Instant Quote
+                  Request a Quote
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -153,7 +109,7 @@ export default function HomePage() {
               The right substrate for every brand
             </h2>
           </div>
-          <p className="text-xs text-gray-400 mb-5">All substrates in stock for 3-day turnaround</p>
+          <p className="text-xs text-gray-400 mb-5">Material availability and suitability are confirmed when quoting.</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {materials.map(({ name, description }) => (
               <div
@@ -235,8 +191,7 @@ export default function HomePage() {
             Ready for premium labels?
           </h2>
           <p className="text-white/55 max-w-md mx-auto mb-10 text-base leading-relaxed">
-            Configure your specs, get an instant price, and have labels at your door
-            within the week.
+            Send your sizes, quantities and artwork requirements for a quote tailored to your job.
           </p>
           <Button
             asChild

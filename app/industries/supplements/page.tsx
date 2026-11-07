@@ -6,43 +6,43 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Supplement Labels",
   description:
-    "TGA-compliant label printing for protein, vitamins, and wellness brands. Batch codes, ingredient panels, and expiry requirements handled.",
+    "Product label printing for supplement bottles, tubs and pouches, using customer-approved artwork and information.",
 };
 
 const recommendedMaterials = [
   {
     name: "Gloss Polypropylene",
-    badge: "Most popular",
+    badge: "Discuss suitability",
     description:
-      "Waterproof and tear-resistant — the go-to for supplement bottles and tubs. Survives condensation, oily hands, and warehouse handling without peeling or smearing.",
+      "Discuss film stocks for your bottles and tubs. Test a sample for the moisture, handling and storage conditions your packaging will encounter.",
   },
   {
     name: "Matte Laminate",
     badge: "Premium feel",
     description:
-      "A soft, non-reflective surface that communicates quality at first touch. Works exceptionally well for premium wellness and natural supplement lines.",
+      "Ask about a matte finish for your label. Material, finish and availability are confirmed on quote.",
   },
   {
     name: "Clear Film",
     badge: "Modern look",
     description:
-      "Transparent substrate gives a clean, contemporary no-label appearance. Ideal for brands that want the product itself to be part of the visual identity.",
+      "Ask about clear label stock and white-toner requirements for your design. Suitability is confirmed for each job.",
   },
 ];
 
 const commonSizes = [
-  { size: "100 × 50mm", note: "Standard for 250–500ml bottles and mid-size tubs" },
-  { size: "80 × 40mm",  note: "Compact format for capsule jars and slim bottles" },
-  { size: "60 × 30mm",  note: "Small-format for sachets, sample packs, and vials" },
+  { size: "100 × 50mm", note: "Example format; check against your actual container" },
+  { size: "80 × 40mm",  note: "Example compact format; confirm fit on your packaging" },
+  { size: "60 × 30mm",  note: "Example small format; confirm artwork readability" },
 ];
 
 const requirements = [
-  "Batch code and lot number printing",
-  "Expiry date placement and formatting",
-  "Ingredient and nutrition panels",
-  "TGA advisory statements",
-  "Barcode and QR code integration",
-  "Tamper-evident and sequential numbering",
+  "Approved product names and claims",
+  "Ingredient and nutrition information, where required",
+  "Directions, warnings and other required statements",
+  "Batch and date fields, where required",
+  "Supplied barcodes or QR codes",
+  "You are responsible for approving the content and regulatory suitability before printing"
 ];
 
 export default function SupplementsPage() {
@@ -58,8 +58,7 @@ export default function SupplementsPage() {
             Supplement Labels
           </h1>
           <p className="text-white/65 text-lg leading-relaxed mb-10 max-w-xl">
-            TGA-compliant label printing for protein, vitamins, and wellness brands.
-            We understand batch codes, ingredient panels, and expiry requirements.
+            Printed labels for supplement bottles, tubs and pouches, using your approved artwork and product information.
           </p>
           <Button
             asChild
@@ -67,7 +66,7 @@ export default function SupplementsPage() {
             className="bg-copper hover:bg-copper-dark text-white font-semibold px-8 h-12"
           >
             <Link href="/quote-calculator">
-              Get Instant Quote
+              Request a Quote
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
@@ -115,7 +114,7 @@ export default function SupplementsPage() {
                 Common sizes
               </p>
               <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                Standard supplement label sizes
+                Example label sizes
               </h2>
               <div className="flex flex-col gap-0">
                 {commonSizes.map(({ size, note }) => (
@@ -130,7 +129,7 @@ export default function SupplementsPage() {
                   </div>
                 ))}
                 <p className="text-xs text-gray-400 mt-4">
-                  Custom sizes available — enter any dimensions in the quote calculator.
+                  Send your actual dimensions so we can confirm layout and cutting suitability.
                 </p>
               </div>
             </div>
@@ -138,10 +137,10 @@ export default function SupplementsPage() {
             {/* Compliance */}
             <div>
               <p className="text-copper text-xs font-semibold uppercase tracking-widest mb-2">
-                Compliance
+                Artwork content
               </p>
               <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                What we handle on every supplement job
+                Information to include in your approved artwork
               </h2>
               <ul className="flex flex-col gap-0">
                 {requirements.map((req) => (
@@ -167,8 +166,7 @@ export default function SupplementsPage() {
             Ready to label your supplement range?
           </h2>
           <p className="text-white/55 max-w-md mx-auto mb-10 text-base leading-relaxed">
-            Enter your label dimensions, quantity, and material to get an instant
-            price — no account required.
+            Send your label dimensions, quantity per design and material preferences for a job-specific quote.
           </p>
           <Button
             asChild
@@ -176,7 +174,7 @@ export default function SupplementsPage() {
             className="bg-copper hover:bg-copper-dark text-white font-semibold px-10 h-12 text-base"
           >
             <Link href="/quote-calculator">
-              Get Instant Quote
+              Request a Quote
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>

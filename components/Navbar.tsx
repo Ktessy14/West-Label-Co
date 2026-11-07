@@ -15,7 +15,7 @@ const INDUSTRIES = [
 const NAV_LINKS = [
   { label: "Industries",       href: "#",                  children: INDUSTRIES },
   { label: "Process",          href: "/process"                                 },
-  { label: "Quote Calculator", href: "/quote-calculator"                        },
+  { label: "Request a Quote", href: "/quote-calculator"                        },
   { label: "Samples",          href: "/request-sample"                          },
   { label: "Contact",          href: "/contact"                                 },
 ];

@@ -8,34 +8,14 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Cosmetics Labels",
   description:
-    "Premium cosmetics and beauty labels with holographic substrates, gloss, matte, and laminate finishes. Luxury results from our Perth print studio.",
+    "Custom cosmetic labels printed in Perth, with colour, white toner, metallic effects and digital cutting.",
 };
 
 const features = [
-  {
-    icon: Sparkles,
-    title: "Holographic Substrate",
-    description:
-      "Rainbow foil substrate that shifts and shimmers under light — in stock and ready to print. Delivers instant shelf presence for limited editions, serums, and luxury packaging.",
-  },
-  {
-    icon: Palette,
-    title: "Vivid Colour Reproduction",
-    description:
-      "Full CMYK process printing with extended gamut capability. Accurate, consistent colour across every run — critical for maintaining brand standards on shelf.",
-  },
-  {
-    icon: Layers,
-    title: "Protective Laminates",
-    description:
-      "Gloss and matte laminates add durability and a premium feel. Ideal for products that see moisture, handling, or need to project a high-end aesthetic.",
-  },
-  {
-    icon: Gem,
-    title: "Premium Substrates",
-    description:
-      "White gloss polypropylene, matte paper, clear BOPP film, and holographic foil. Die-cut to any shape — rounds, ovals, custom contours — to fit your container.",
-  },
+ { icon: Sparkles, title: "Metallic Effects", description: "Silver stock and selective white toner can combine metallic accents with opaque text and colour." },
+ { icon: Palette, title: "Colour and White Toner", description: "Discuss colour, opacity and white-layer requirements for your artwork. Ask about proof options for colour-critical designs." },
+ { icon: Layers, title: "Material and Finish", description: "Material and finish options are confirmed for each job. Test samples against oils, moisture and handling before committing to a run." },
+ { icon: Gem, title: "Digital Cutting", description: "Send your label size and shape so we can check a suitable cutting layout for your container." },
 ];
 
 const applications = [
@@ -51,9 +31,18 @@ const applications = [
 ];
 
 const standardFinishes = [
-  { name: "Gloss Laminate", detail: "High-shine protective coating" },
-  { name: "Matte Laminate", detail: "Smooth, premium flat finish" },
-  { name: "Holographic Substrate", detail: "Rainbow foil substrate" },
+  {
+    "name": "White toner",
+    "detail": "Opaque areas on suitable stocks"
+  },
+  {
+    "name": "Metallic stock",
+    "detail": "Selective metallic effects in your artwork"
+  },
+  {
+    "name": "Other finishes",
+    "detail": "Availability and suitability confirmed on quote"
+  }
 ];
 
 export default function CosmeticsPage() {
@@ -69,9 +58,7 @@ export default function CosmeticsPage() {
             Cosmetics Labels That Captivate
           </h1>
           <p className="text-white/70 text-lg max-w-xl mb-8">
-            Your packaging is your first impression. We create luxury labels with
-            holographic substrates, protective laminates, and precision printing
-            your beauty brand deserves.
+            Custom labels for your skincare and beauty packaging, with colour, white toner and metallic effects on suitable stocks.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild className="bg-brand-gold hover:bg-brand-gold-dark text-white font-semibold">
@@ -131,7 +118,7 @@ export default function CosmeticsPage() {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-brand-navy mb-8">
-                Standard Finishes
+                Discuss Your Finish
               </h2>
               <div className="flex flex-col gap-4">
                 {standardFinishes.map((f) => (
@@ -151,8 +138,7 @@ export default function CosmeticsPage() {
                   Specialty Finishes
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Looking for foil stamping, embossing, or spot UV? We source these
-                  through our production partners. Lead time: 7–10 days. Pricing on request.
+                  Have a specific finish in mind? Send a reference so we can confirm feasibility, material availability and pricing before you order.
                 </p>
                 <Button asChild size="sm" className="bg-brand-navy hover:bg-brand-navy-dark text-white font-semibold">
                   <Link href="/contact">
