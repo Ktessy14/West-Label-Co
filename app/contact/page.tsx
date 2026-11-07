@@ -50,11 +50,10 @@ export default function ContactPage() {
             Get in Touch
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-5">
-            Talk to a Label Specialist
+            Let’s talk labels
           </h1>
           <p className="text-white/70 text-lg max-w-xl mx-auto">
-            Have a question about materials, specs, or pricing? Our team responds
-            within 1 business day — usually much faster.
+            Tell us about your labels, packaging and quantities. We’ll work through materials, artwork and pricing with you.
           </p>
         </div>
       </section>
@@ -92,15 +91,15 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-10 p-6 bg-brand-navy rounded-xl">
-                <h3 className="font-semibold text-white mb-2">Need a quote fast?</h3>
+                <h3 className="font-semibold text-white mb-2">Planning a label job?</h3>
                 <p className="text-white/60 text-sm mb-4">
-                  Use our quote calculator for instant pricing on standard orders.
+                  See which specifications to include for a job-specific quote.
                 </p>
                 <Button
                   asChild
                   className="w-full bg-brand-gold hover:bg-brand-gold-dark text-white font-medium text-sm"
                 >
-                  <a href="/quote-calculator">Quote Calculator</a>
+                  <a href="/quote-calculator">Request a Quote</a>
                 </Button>
               </div>
             </div>

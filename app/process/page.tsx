@@ -8,81 +8,69 @@ import { Separator } from "@/components/ui/separator";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "How West Label Co. takes your label from concept to delivery. A streamlined 6-step process built for quality and speed.",
+    "How West Label Co. takes your label from concept to delivery. From specifications and artwork approval to print and finishing.",
 };
 
 const steps = [
   {
-    number: "01",
-    title: "Submit Your Specs",
-    description:
-      "Use our quote calculator or contact form to tell us about your project. Label size, material, quantity, finish, and timeline — the more detail, the faster we can help.",
-    detail:
-      "We accept artwork in AI, EPS, PDF, and high-res TIFF formats. Not sure what you need? Our specialists will guide you.",
+    "number": "01",
+    "title": "Send Your Specs",
+    "description": "Tell us the label size, quantity per design, intended use and any finishing requirements.",
+    "detail": "Include roll direction, core size and application method if you use a labelling machine. Email artwork to info@westlabelco.com.au."
   },
   {
-    number: "02",
-    title: "Receive Your Quote",
-    description:
-      "We'll send a detailed quote within 1 business day. No hidden fees, no surprises — just transparent pricing for exactly what you need.",
-    detail:
-      "Our quotes include material, printing, finishing, and shipping. Volume discounts apply at 1K, 5K, 10K, and 50K quantities.",
+    "number": "02",
+    "title": "Confirm the Quote",
+    "description": "Pricing depends on material, layout, artwork, white-toner coverage and finishing.",
+    "detail": "The quote confirms minimum quantities, any setup charges, delivery costs and expected dispatch timing for your job."
   },
   {
-    number: "03",
-    title: "Artwork Review & Proofing",
-    description:
-      "Our prepress team reviews your artwork for print-readiness, colour accuracy, and file integrity. You receive a digital proof within 24 hours of order confirmation.",
-    detail:
-      "We check bleed, safe zones, resolution, and colour profile. If anything needs fixing, we flag it before production — not after.",
+    "number": "03",
+    "title": "Review Artwork",
+    "description": "Check the layout and supplied product information before production.",
+    "detail": "Discuss bleed, safe areas, resolution and colour requirements. A digital proof is not a guarantee of an exact screen-to-print colour match."
   },
   {
-    number: "04",
-    title: "Press Approval",
-    description:
-      "Review and approve your digital proof before we go to press. For colour-critical orders, physical press proofs are available.",
-    detail:
-      "Production begins only after you sign off on the proof. Your approval locks in colour, layout, and specifications.",
+    "number": "04",
+    "title": "Approve the Specification",
+    "description": "Confirm artwork, material, dimensions and quantities before the job proceeds.",
+    "detail": "For demanding applications, request a sample and test it on your own packaging under the intended conditions."
   },
   {
-    number: "05",
-    title: "Production",
-    description:
-      "Your labels enter our production queue. Standard lead time is 3–5 business days from proof approval. Rush service available: 2–3 days (+25%).",
-    detail:
-      "Every order is run through our quality control process — colour verification, adhesion testing, and visual inspection before rolling.",
+    "number": "05",
+    "title": "Print and Finish",
+    "description": "Labels are printed and finished to the specification agreed for your job.",
+    "detail": "Multiple designs and quantities can be quoted together. Production timing depends on stock, setup and the current schedule."
   },
   {
-    number: "06",
-    title: "Delivery",
-    description:
-      "Labels are wound on rolls or cut to sheets based on your preference. Shipped via Team Global Express with tracking, or collected from our Perth warehouse.",
-    detail:
-      "Reorders are stored in our system for fast turnaround — just reach out and we'll have your labels back in production.",
-  },
+    "number": "06",
+    "title": "Arrange Delivery",
+    "description": "Delivery or collection arrangements are confirmed with your order.",
+    "detail": "For a reorder, provide the previous job reference and identify any changes to artwork, quantities or materials."
+  }
 ];
 
 const faqs = [
   {
-    q: "What file formats do you accept?",
-    a: "We accept AI, EPS, PDF (with bleeds), and high-resolution TIFF (300+ DPI). Vector formats are strongly preferred for the best print quality.",
+    "q": "How do I send artwork?",
+    "a": "Email your artwork to info@westlabelco.com.au with the job details. Include your available file formats so we can check print readiness."
   },
   {
-    q: "What is your minimum order quantity?",
-    a: "Our digital presses allow us to run as few as 250 labels per design. For offset printing, minimums start at 5,000.",
+    "q": "What is the minimum order?",
+    "a": "Minimum quantities and setup requirements are confirmed on quote. Include the quantity for each design or SKU."
   },
   {
-    q: "Do you offer physical press proofs?",
-    a: "Yes, for an additional fee we can run a physical press proof before your full production run. Contact us for pricing.",
+    "q": "Can I check a sample first?",
+    "a": "Use the sample request form to discuss materials and your intended application. Availability and any sample costs are confirmed before proceeding."
   },
   {
-    q: "Can I reorder with the same specifications?",
-    a: "Absolutely. We store all approved artwork and specs in our system. Reorders take one business day to confirm and ship on our standard timeline.",
+    "q": "Can I reorder?",
+    "a": "Send your previous job reference and tell us what has changed. We will confirm the specification and current quote."
   },
   {
-    q: "Do you have in-house designers?",
-    a: "We offer basic artwork cleanup and template creation. For full label design, we can recommend trusted design partners.",
-  },
+    "q": "Can you help prepare artwork?",
+    "a": "Tell us what files you have and what needs changing. Artwork assistance and its scope are confirmed before work begins."
+  }
 ];
 
 export default function ProcessPage() {
@@ -98,8 +86,7 @@ export default function ProcessPage() {
             Our Process
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            From first contact to delivery in as few as 3–5 business days. Here&apos;s
-            exactly how we turn your vision into a finished label.
+            From your label specification to printing and delivery. Timing and job requirements are confirmed on quote.
           </p>
         </div>
       </section>
